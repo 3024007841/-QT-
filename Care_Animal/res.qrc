@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pet.svg</file>
+        <file>adopter.svg</file>
+        <file>history.svg</file>
+    </qresource>
+</RCC>

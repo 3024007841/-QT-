@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>851</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>171</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 16px;
+    color: #e6efe7;
+    background-color: #ffe4e1;
+</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>-8</x>
+      <y>-5</y>
+      <width>181</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="Pet_pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>161</width>
+         <height>61</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color:#ffc7c8;
+    color: white;
+   border-radius: 15px ;
+   
+}
+</string>
+       </property>
+       <property name="text">
+        <string>宠物</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Adopters_pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>161</width>
+         <height>61</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #ffc7c8;
+    color: white;
+    border-radius: 15px ;
+}</string>
+       </property>
+       <property name="text">
+        <string>领养者</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="history_pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>161</width>
+         <height>61</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color:#ffc7c8;
+    color: white;
+    border-radius: 15px ;
+}</string>
+       </property>
+       <property name="text">
+        <string>领养记录</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>0</y>
+     <width>681</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:white
+</string>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QTableView" name="pet_tableView">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>60</y>
+       <width>681</width>
+       <height>541</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addPet_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background: #ffc7c8 ;
+    color: white ;
+    border-radius: 20px ;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>添加</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QTableView" name="adopter_tableView">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>60</y>
+       <width>681</width>
+       <height>541</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addAdopter_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background: #ffc7c8 ;
+    color: white ;
+    border-radius: 20px ;
+}</string>
+     </property>
+     <property name="text">
+      <string>添加</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QTableView" name="history_tableView">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>681</width>
+       <height>601</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <widget class="QLineEdit" name="name_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>60</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>111</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>111</width>
+       <height>23</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="pet_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>120</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>113</width>
+       <height>23</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="number_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>240</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>113</width>
+       <height>23</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="address_textEdit">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>290</y>
+       <width>281</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>281</width>
+       <height>81</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>281</width>
+       <height>81</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="status_textEdit">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>400</y>
+       <width>281</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>281</width>
+       <height>81</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>281</width>
+       <height>81</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>40</y>
+       <width>81</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;名字：&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;宠物：&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;签订协议：&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;手机号码：&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;家庭住址：&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Minimum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;生活状况：&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="add_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>530</y>
+       <width>80</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>添加</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="cancel_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>530</y>
+       <width>80</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>取消</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="agreement_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>180</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <zorder>layoutWidget</zorder>
+    <zorder>add_pushButton</zorder>
+    <zorder>cancel_pushButton</zorder>
+    <zorder>agreement_lineEdit</zorder>
+    <zorder>number_lineEdit</zorder>
+    <zorder>pet_lineEdit</zorder>
+    <zorder>name_lineEdit</zorder>
+    <zorder>address_textEdit</zorder>
+    <zorder>status_textEdit</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

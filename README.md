@@ -3,35 +3,17 @@
 #### 介绍
 本系统使用的为QT6版本开发，是一个简约开发的小系统，还有一些功能待实现。
 
-#### 软件架构
-软件架构说明
 
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+​		因为设计数据库与qt的连接，如果跟我一样是qt6.2以上的版本，对于mysql的连接需要自己找脚本（b站有视频）来生成配置文件，下面的版本就在网上找教程完成连接即可。这是许多人失败的主要原因，只要连接上数据库一切好解决。
 
-#### 参与贡献
+![image-20240104211412369](C:\Users\zdy\AppData\Roaming\Typora\typora-user-images\image-20240104211412369.png)
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+基础界面长这个样子，有其他问题可以加QQ（1254952782）交流。
 
 
-#### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+**mysql文件也有给出，其中有一个关联两个表的触发器，实现增加领养者删除宠物和增加记录的功能。**
+
